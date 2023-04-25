@@ -7,6 +7,7 @@ import process from "node:process";
 import { logger } from "./src/utils/index.js";
 import sockets from "./src/sockets.js";
 import "./src/config/db.js";
+require('dotenv').config({path:'../.env.example'});
 
 const server = http.createServer(app);
 const io = new WebSocketServer(server);
