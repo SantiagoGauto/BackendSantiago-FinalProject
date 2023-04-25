@@ -1,5 +1,5 @@
 import { createTransport } from "nodemailer";
-require('dotenv').config({path:'./.env.example'});
+require('dotenv').config({path:'../.env.example'});
 
 const transporter = createTransport({
   host: "smtp.ethereal.email",
